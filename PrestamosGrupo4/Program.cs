@@ -1,7 +1,11 @@
+using PrestamosGrupo4.Models.Interfaces;
+using PrestamosGrupo4.Models.Repositorios;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IUsuario, UsuarioRepositorio>();
 
 var app = builder.Build();
 
