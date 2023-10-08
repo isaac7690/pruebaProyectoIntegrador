@@ -14,7 +14,7 @@ namespace PrestamosGrupo4.Models.Entidades
         [Display(Name = "Contraseña")]
         [PasswordPropertyText]
         [Compare("passwordConfirm")]
-        [RegularExpression("^(?=\\w*\\d)(?=\\w*[A - Z])(?=\\w*[a - z])\\S{8,16}$}", ErrorMessage = "La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.")]
+        [RegularExpression("^(?=.*\\d)(?=.*[A-Z])(?=.*[a-z]).{8,16}$}", ErrorMessage = "La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.")]
         public string? password { get; set; }
 
         [Required]
