@@ -1,4 +1,4 @@
-﻿namespace PrestamosGrupo4.Models
+﻿namespace PrestamosGrupo4.Models.Entidades
 {
     public class rolModel
     {

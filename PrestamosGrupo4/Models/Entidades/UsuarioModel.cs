@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-namespace PrestamosGrupo4.Models
+namespace PrestamosGrupo4.Models.Entidades
 {
     public class UsuarioModel
     {
@@ -14,7 +14,7 @@ namespace PrestamosGrupo4.Models
         [Display(Name = "Contraseña")]
         [PasswordPropertyText]
         [Compare("passwordConfirm")]
-        [RegularExpression("^(?=\\w*\\d)(?=\\w*[A - Z])(?=\\w*[a - z])\\S{8,16}$}",ErrorMessage= "La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.")]
+        [RegularExpression("^(?=\\w*\\d)(?=\\w*[A - Z])(?=\\w*[a - z])\\S{8,16}$}", ErrorMessage = "La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.")]
         public string? password { get; set; }
 
         [Required]
@@ -34,7 +34,7 @@ namespace PrestamosGrupo4.Models
         [Display(Name = "Correo electrónico")]
         [EmailAddress]
         public string? email { get; set; }
-        
+
         [Required]
         [Display(Name = "Apellido paterno")]
         public string? aPaterno { get; set; }

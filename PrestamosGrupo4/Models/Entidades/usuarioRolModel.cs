@@ -1,4 +1,4 @@
-﻿namespace PrestamosGrupo4.Models
+﻿namespace PrestamosGrupo4.Models.Entidades
 {
     public class usuarioRolModel
     {
@@ -6,7 +6,6 @@
         public int idUsuario { get; set; }
         public string? nombreRol { get; set; }
         public string? nombreUsuario { get; set; }
-        public  List<rolModel>? roles { get; set; }
-
+        public List<rolModel>? roles { get; set; }
     }
 }
