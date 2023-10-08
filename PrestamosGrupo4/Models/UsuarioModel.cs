@@ -52,5 +52,7 @@ namespace PrestamosGrupo4.Models
         [Display(Name = "Teléfono")]
         [RegularExpression("9[0-9]{8}", ErrorMessage = "Ingrese un número de celular válido")]
         public string? telefono { get; set; }
+
+        public int numero { get; set; }
     }
 }
